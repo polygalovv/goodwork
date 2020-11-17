@@ -1,2 +1,22 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#include <iostream>
+using namespace std;
+int* copyarr(int* a, unsigned int size)
+{
+	int* arr2 = new int[size];
+	for (int i = 0; i < size; ++i)
+		arr2[i] = *(a + i);
+	int* arr3 = &arr2[0];
+	return arr3;
+	
+}
+int main()
+{
+	int n = 0;
+	cin >> n;
+	int* arr1 = new int[n];
+	for (int i = 0; i < n; ++i)
+		cin >> arr1[i];
+	int* arr = &arr1[0];
+	cout << *copyarr;
+	
+}
